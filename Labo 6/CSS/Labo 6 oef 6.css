@@ -1,0 +1,15 @@
+.checklist{
+    list-style-type: none;
+    width: 15px;
+    height: 15px;
+}
+
+.checklist li{
+    list-style-position: outside;
+    list-style-image: url("unchecked.png");
+}
+
+.checklist .checked{
+    list-style-position: outside;
+    list-style-image: url("checked.png");
+}

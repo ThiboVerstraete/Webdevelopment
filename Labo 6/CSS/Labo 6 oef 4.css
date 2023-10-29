@@ -1,0 +1,27 @@
+body{
+    font-family: Verdana;
+    font-size: 1.1em;
+    background-color: silver;
+    color: darkblue;
+}
+
+h1{
+    font-size: small;
+    font-variant: all-small-caps;
+    background-color: red;
+}
+
+a:hover{
+    border-style: solid;
+    border-color: peru;
+}
+
+html{
+    border-style: dotted;
+    border-width: 1px;
+}
+
+li{
+    border-style: dotted;
+    border-width: 1px;
+}

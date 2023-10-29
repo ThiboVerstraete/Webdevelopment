@@ -1,0 +1,17 @@
+.closed{
+    width: 30px;
+    height: 32px;
+}
+.open{
+    width: 30px;
+    height: 32px;
+
+    display: none;
+}
+
+a:hover .closed{
+    display: none;
+}
+a:hover .open{
+    display: inline-block;
+}
