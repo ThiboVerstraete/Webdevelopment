@@ -1,0 +1,37 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+th{
+    width: auto;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+h1{
+    background-color: #006DA3;
+}
+
+h3{
+    background-color: lightblue;
+    width: fit-content;
+}
+
+ul{
+    background-color: lightseagreen;
+}
+
+p{
+    margin: auto;
+}
+
+.GTfoto{
+     content: revert;
+}
+
+.lelijkefoto{
+    background-image: url("cat_open.jpg");
+    background-size: cover;
+}

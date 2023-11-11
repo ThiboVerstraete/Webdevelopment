@@ -1,0 +1,38 @@
+body{
+    max-width: 95%;
+    margin: auto;
+}
+
+.kopachtergrond{
+    background-image: url("header.jpg");
+    background-size: cover;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.kopnavigatie{
+    background-color: #2B2D42;
+    background-size: cover;
+    color: black;
+}
+
+.kopnavigatie > a{
+    color: lightseagreen;
+}
+
+article{
+    background-color: lightgray;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+
+h1{
+    font-weight: bolder;
+    font-family: Verdana;
+}
+
+.midden > article > header > h1{
+    color: black;
+    font-size: 20px;
+    text-decoration: underline;
+}
