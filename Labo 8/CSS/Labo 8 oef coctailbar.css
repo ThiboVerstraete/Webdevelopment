@@ -55,7 +55,7 @@ h2{
     color: black;
 }
 
-link.hover{
+link:hover{
     color: brown;
 }
 
