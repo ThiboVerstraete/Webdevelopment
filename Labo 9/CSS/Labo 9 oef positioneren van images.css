@@ -1,0 +1,21 @@
+main{
+    width: 90%;
+    margin: auto;
+    font-size: 1.25em;
+}
+
+article{
+    border: solid black 1px;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+article:nth-child(odd) img{
+    float: left;
+    box-sizing: content-box;
+}
+article:nth-child(even) img{
+    float: right;
+    box-sizing: content-box;
+}
