@@ -1,0 +1,29 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+figure {
+    background: black;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    width: auto;
+}
+table, th, td {
+    border: 1px solid #333;
+}
+.col-lg-1{
+    background-color: blue;
+}
+.col-sm-6{
+    text-align: center;
+}
+.col-md-4{
+    text-align: center;
+}
+.col-lg-4{
+    text-align: center;
+}
