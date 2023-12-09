@@ -1,0 +1,11 @@
+.container{
+    background-color: cornflowerblue;
+    grid-template-columns: repeat(4, auto);
+    display: grid;
+}
+
+.container .block{
+    margin:50px;
+    padding:50px;
+    background-color: white;
+}
