@@ -1,9 +1,23 @@
+.container{
+    background-color: cornflowerblue;
+    grid-template-columns: repeat(3, auto);
+    display: grid;
+    gap: 5px;
+}
+
+.container .block{
+    margin:20px;
+    padding:20px;
+    background-color: white;
+}
+
 @media only screen and (min-width: 700px) {
     .container{
         background-color: cornflowerblue;
         grid-template-columns: repeat(5, auto);
         grid-template-rows: repeat(5, auto);
         display: grid;
+        gap: 5px;
     }
 
     .block1{
