@@ -1,0 +1,84 @@
+html {
+    font-family: helvetica;
+    background-color: #333;
+    font-size: 1em;
+}
+
+main{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid white 10px;
+}
+
+* :not(nav, img){
+    padding: 10px;
+}
+
+section{
+    margin: 5px;
+}
+
+body{
+    margin: 5px;
+}
+
+header, footer{
+    background-color: #ddaa00;
+    text-align: center;
+    color: white;
+}
+
+nav{
+    padding: 5px 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+nav a{
+    margin: 0 5px;
+    border: 1px solid black;
+    width: 100%;
+    background-color: white;
+    color: #ddaa00;
+    text-decoration: none;
+    text-align: center;
+}
+
+section{
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+section a{
+    border: solid grey 1px;
+    color: grey;
+    text-decoration: grey;
+    text-align: center;
+}
+
+img{
+    padding: 0px;
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    margin: 0px;
+}
+
+footer{
+    border-top: solid black 20px;
+}
+
+@media only screen and (min-width: 700px) {
+    main{
+        flex-direction: row;
+        justify-content: center;
+    }
+}
