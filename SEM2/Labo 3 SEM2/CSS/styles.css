@@ -1,0 +1,18 @@
+.colorDemo {
+	width:100px;
+	height:100px;
+	float: right;
+	top: -50px;
+	right: 10px;
+	position: relative;
+}
+
+.blok{
+	border: solid black 1px;
+	float: left;
+	width: 1000px;
+}
+
+.slider{
+	width: 250px;
+}
