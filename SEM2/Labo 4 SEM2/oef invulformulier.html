@@ -6,71 +6,75 @@
     <title>oef invulformulier</title>
 </head>
 <body>
-<label for="Fname">First name*:</label>
-<input type="text" id="Fname" name="Fname" placeholder="Your first name" autofocus="autofocus">
-<br>
-<label for="Lname">Last name*:</label>
-<input type="text" id="Lname" name="Lname" placeholder="Your last name">
-<p>Which sport do you train?</p>
-<label for="running">Running</label>
-<input type="checkbox" id="running" name="running">
-<br>
-<label for="swimming">Swimming</label>
-<input type="checkbox" id="swimming" name="swimming">
-<br>
-<label for="rowing">Rowing</label>
-<input type="checkbox" id="rowing" name="rowing">
-<p>What is your gender</p>
-<input type="radio" id="male" name="male">
-<label for="male">Male</label>
-<br>
-<input type="radio" id="female" name="female">
-<label for="female">Female</label>
-<br>
-<label for="favmovie">Favorite movie:</label>
-<input type="text" id="favmovie" name="favmovie">
-<br>
-<label for="favquote">Favorite quote:</label>
-<input type="text" id="favquote" name="favquote" placeholder="Write your favorite quote">
-<br>
-<label for="password">Password*:</label>
-<input type="text" id="password" name="password">
-<br>
-<label for="favfood">Favorite food:</label>
-<select id="favfood" name="favfood">
-    <option value="frieten">Frieten</option>
-    <option value="frieten2">Frieten</option>
-    <option value="frieten3">Frieten (Het enige juiste antwoord)</option>
-</select>
-<br>
-<input type="file" id="bestand" name="bestand">Bestand kiezen</input>
-<br>
-<label for="email">Email adress:</label>
-<input type="text" id="email" name="email" placeholder="Enter your email adress">
-<br>
-<label for="favsite">Favorite site:</label>
-<input type="text" id="favsite" name="favsite" placeholder="Enter the URL of your favorite site">
-<br>
-<label for="favnumber10">Favorite number between 1-10</label>
-<input type="number" id="favnumber10" name="favnumber10">
-<br>
-<label for="favnumber1000">Favorite number between 11-1000</label>
-<input type="range" id="favnumber1000" name="favnumber1000">
-<br>
-<label for="born">When were you born?</label>
-<input type="date" id="born" name="born" placeholder="Dag/Maand/Jaar">
-<br>
-<label for="zip">Belgium zip-code reg number*:</label>
-<input type="text" id="zip" name="zip" placeholder="9999">
-<br>
-<label for="search">Search for something</label>
-<input type="text" id="search" name="search">
-<br>
-<label for="color">What is your favorite color</label>
-<input type="color" id="color" name="color">
-<br>
-<input type="submit" value="submit">
-
+<form action="" method="post">
+    <label for="Fname">First name*:</label>
+    <input type="text" id="Fname" name="Fname" placeholder="Your first name" autofocus="autofocus">
+    <br>
+    <label for="Lname">Last name*:</label>
+    <input type="text" id="Lname" name="Lname" placeholder="Your last name">
+    <p>Which sport do you train?</p>
+    <label for="running">Running</label>
+    <input type="checkbox" id="running" name="running">
+    <br>
+    <label for="swimming">Swimming</label>
+    <input type="checkbox" id="swimming" name="swimming">
+    <br>
+    <label for="rowing">Rowing</label>
+    <input type="checkbox" id="rowing" name="rowing">
+    <p>What is your gender</p>
+    <input type="radio" id="male" name="male">
+    <label for="male">Male</label>
+    <br>
+    <input type="radio" id="female" name="female">
+    <label for="female">Female</label>
+    <br>
+    <label for="favmovie">Favorite movie:</label>
+    <input type="text" id="favmovie" name="favmovie">
+    <br>
+    <label for="favquote">Favorite quote:</label>
+    <input type="text" id="favquote" name="favquote" placeholder="Write your favorite quote">
+    <br>
+    <label for="password">Password*:</label>
+    <input type="text" id="password" name="password">
+    <br>
+    <label for="favfood">Favorite food:</label>
+    <select id="favfood" name="favfood">
+        <option value="frieten">Frieten</option>
+        <option value="frieten2">Frieten</option>
+        <option value="frieten3">Frieten (Het enige juiste antwoord)</option>
+    </select>
+    <br>
+    <input type="file" id="bestand" name="bestand">Bestand kiezen</input>
+    <br>
+    <label for="email">Email adress:</label>
+    <input type="text" id="email" name="email" placeholder="Enter your email adress">
+    <br>
+    <label for="favsite">Favorite site:</label>
+    <input type="text" id="favsite" name="favsite" placeholder="Enter the URL of your favorite site">
+    <br>
+    <label for="favnumber10">Favorite number between 1-10</label>
+    <input type="number" id="favnumber10" name="favnumber10">
+    <br>
+    <label for="favnumber1000">Favorite number between 11-1000</label>
+    <input type="range" id="favnumber1000" name="favnumber1000">
+    <br>
+    <label for="born">When were you born?</label>
+    <input type="date" id="born" name="born" placeholder="Dag/Maand/Jaar">
+    <br>
+    <label for="zip">Belgium zip-code reg number*:</label>
+    <input type="text" id="zip" name="zip" placeholder="9999">
+    <br>
+    <label for="search">Search for something</label>
+    <input type="text" id="search" name="search">
+    <br>
+    <label for="color">What is your favorite color</label>
+    <input type="color" id="color" name="color">
+    <br>
+    <input type="submit" value="submit">
+</form>
 <script type="text/javascript" charset="utf-8" src="scripts/invulformulier.js"></script>
 </body>
+<footer>
+    <a href="../.."><button class="terug">Return</button></a>
+</footer>
 </html>
