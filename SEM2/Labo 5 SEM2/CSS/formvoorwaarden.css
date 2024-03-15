@@ -1,0 +1,9 @@
+.labels{
+    width: 140px;
+    float: left;
+}
+
+.inputs{
+    width: calc(100% - 140px);
+    float: left;
+}

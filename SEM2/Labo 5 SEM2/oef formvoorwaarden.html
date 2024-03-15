@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/formvoorwaarden.css">
+    <title>oef formvoorwaarden</title>
+</head>
+<body>
+<form action="post">
+    <div class="labels">
+        <label for="chkroker">Is roker</label>
+        <br>
+        <label for="radmoedertaal">Moedertaal</label>
+        <br>
+        <label for="ddlfavorietebuurland">Favoriete buurland</label>
+        <br>
+        <label for="lstbestelling">Bestelling</label>
+    </div>
+    <div class="inputs">
+        <input type="checkbox" id="chkroker">
+        <br>
+        <div id="radmoedertaal">
+            <input type="radio" id="ned" name="moedertaal"> Nederlands
+            <input type="radio" id="fr" name="moedertaal"> Frans
+            <input type="radio" id="eng" name="moedertaal"> Engels
+        </div>
+        <br>
+        <select name="ddlfavorietebuurland" id="ddlfavorietebuurland">
+            <option value="Frankrijk">Frankrijk</option>
+            <option value="Duitsland">Duitsland</option>
+            <option value="Nederland">Nederland</option>
+        </select>
+        <br>
+        <select name="lstbestelling" id="lstbestelling" size="6" multiple>
+            <option value="aardappelen">aardappelen</option>
+            <option value="brood">brood</option>
+            <option value="melk">melk</option>
+            <option value="biefstuk">biefstuk</option>
+            <option value="chips">chips</option>
+            <option value="krant">krant</option>
+        </select>
+    </div>
+</form>
+<button id="resultaat">Toon resultaat</button>
+<script src="scripts/formvoorwaarden.js"></script>
+<footer>
+    <a href="../..">
+        <button class="terug">Return</button>
+    </a>
+</footer>
+</body>
+</html>
