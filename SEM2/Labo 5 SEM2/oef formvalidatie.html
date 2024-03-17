@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/formvalidatie.css">
+    <title>oef formvalidatie</title>
+</head>
+<body>
+<form action="">
+    <label for="vn">Voornaam</label>
+    <input type="text" id="vn" name="vn">
+    <span class="error" id="errorvoornaam"></span>
+
+    <label for="fn">Achternaam</label>
+    <input type="text" id="fn" name="fn">
+    <span class="error" id="errorachternaam"></span>
+
+    <label for="geboortedatum">Geboortedatum</label>
+    <input type="text" id="geboortedatum" name="geboortedatum">
+    <span class="error" id="errorgeboortedatum"></span>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email">
+    <span class="error" id="erroremail"></span>
+
+    <label for="aantalkinderen">Aantal kinderen</label>
+    <input type="text" id="aantalkinderen" name="aantalkinderen">
+    <span class="error" id="erroraantalkinderen"></span>
+
+    <input type="button" id="btnvalideer" value="valideer">
+</form>
+<script src="scripts/formvalidatie.js"></script>
+<footer>
+    <a href="../..">
+        <button class="terug">Return</button>
+    </a>
+</footer>
+</body>
+</html>
