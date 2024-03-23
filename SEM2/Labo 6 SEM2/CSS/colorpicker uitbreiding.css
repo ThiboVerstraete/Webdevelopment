@@ -1,0 +1,22 @@
+.colordemo {
+    width:100px;
+    height:100px;
+    border:1px solid black;
+}
+
+div{
+    border: 2px solid grey;
+    width: 45%;
+}
+
+.slider{
+    display: block;
+    margin-top: 10px;
+}
+
+section>div.colorbox {
+    width: 100px;
+    height: 100px;
+    border: 1px solid grey;
+    margin: 10px;
+}

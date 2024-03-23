@@ -119,7 +119,7 @@ const isEmailValid = (email) =>{
 }
 
 const reportError = (element, errElement, message) =>{
-    element.className="validatie";
+    element.className="validate";
     errElement.textContent = message;
 }
 
