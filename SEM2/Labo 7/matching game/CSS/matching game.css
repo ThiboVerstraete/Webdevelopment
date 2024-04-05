@@ -1,0 +1,26 @@
+.terug {
+    float: left;
+    background-color: #0096E0;
+    border: solid black 2px;
+    width: 200px;
+    height: 80px;
+    padding: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+#speelveld {
+    display: grid;
+    gap: 20px;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
+}

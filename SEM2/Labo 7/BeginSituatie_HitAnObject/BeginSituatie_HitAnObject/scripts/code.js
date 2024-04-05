@@ -8,25 +8,64 @@ let global = {
     timoutid: 0 // id van de timeout timer, zodat we die kunnen annuleren
 };
 
+var taskid = 0;
+var imagesArray = [];
 
 const setup = () => {
-    let icoon = document.getElementById("icoon");
-    icoon.addEventListener("click", randomizor);
-
     let klikt = document.getElementById("klik");
-    klikt.addEventListener("click", doealert);
+    klikt.addEventListener("click", startSpel);
+
+    for (var i = 0; i < global.IMAGE_COUNT; i++){
+        imagesArray.push(global.IMAGE_PATH_PREFIX + i + global.IMAGE_PATH_SUFFIX);
+    }
 };
 
-const randomizor = () => {
-    let links = Math.random()*800;
-    let boven = Math.random()*600;
+const startSpel = () => {
+    let icoon = document.getElementById("icoon");
 
-    this.left(links);
-    this.top(boven);
+    taskid = setInterval(randomizor, global.MOVE_DELAY);
+
+    icoon.addEventListener("click",  checker);
 }
 
-const doealert = () => {
-    window.alert("WERKT");
+const randomizor = () => {
+    let icoon = document.getElementById("icoon");
+
+    let links = 10 + Math.random()*800 - 48;
+    let boven = 10 + Math.random()*600 - 48;
+    let willekeurigeafbeelding = Math.floor(Math.random()*5);
+
+    icoon.style.left = links + "px";
+    icoon.style.top = boven + "px";
+
+    icoon.src = imagesArray[willekeurigeafbeelding];
+}
+
+const checker = () => {
+    let icoon = document.getElementById("icoon");
+
+    // Get the file name part of the URL
+    let icoonFileName = icoon.src.split('/').pop();
+    let imagesArrayFileName = imagesArray[0].split('/').pop();
+
+    console.log(icoonFileName);
+    console.log(imagesArrayFileName);
+
+    if (icoonFileName === imagesArrayFileName) {
+        window.alert("GAME OVER");
+    } else {
+        clearInterval(taskid);
+        taskid = setInterval(randomizor, global.MOVE_DELAY);
+        icoon.addEventListener("click", randomizor);
+        icoon.addEventListener("click", pluspunt);
+    }
+}
+
+const pluspunt = () => {
+    var aantalhits = document.getElementById("hits");
+
+    global.score++;
+    aantalhits.innerHTML = global.score;
 }
 
 window.addEventListener("load", setup);

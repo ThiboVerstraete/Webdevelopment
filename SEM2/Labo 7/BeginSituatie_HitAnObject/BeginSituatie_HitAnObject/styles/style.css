@@ -8,3 +8,15 @@
 #target {
     position: absolute;
 }
+
+#icoon {
+    position: relative;
+    left: 80px;
+    float: left;
+}
+
+#klik {
+    position: relative;
+    height: unset;
+    width: 80px;
+}
