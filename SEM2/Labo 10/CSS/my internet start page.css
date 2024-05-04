@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+#commandoinput{
+    width: 100%;
+    height: 30px;
+}
+
+.commandolichtetext{
+    color: grey;
+}
+
+#commandoknop{
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: limegreen;
+    border-color: greenyellow;
+}
+.container{
+    width: 95%;
+    gap: 5px;
+}
+
+.card{
+    width: 100%;
+    display: inline-block;
+    margin: 0px 20px 20px 20px;
+    padding: 0px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+.card-title{
+    font-size: 20px;
+}
+
+.container{
+    text-decoration: none;
+}
+
+#commandoknop:active{
+    background-color: green;
+}
