@@ -17,7 +17,13 @@ body{
     color: white;
     background-color: limegreen;
     border-color: greenyellow;
+    border-radius: 5px;
 }
+
+#commandoknop:active{
+    background-color: green;
+}
+
 .container{
     width: 95%;
     gap: 5px;
@@ -37,8 +43,4 @@ body{
 
 .container{
     text-decoration: none;
-}
-
-#commandoknop:active{
-    background-color: green;
 }
