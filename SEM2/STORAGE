@@ -1,0 +1,20 @@
+Array = []
+
+//Bestaande
+let storage = localStorage.getItem("key")
+let Sleutel = JSON.parse(storage)
+if(Sleutel !== null && Array !== null){
+    for(let i = 0; i < Sleutel.length; i++){
+        if(Sleutel[i] !== null){
+            Array.push(Sleutel[i])
+        }
+    }
+}
+
+//Opslaan
+let eenkey = {
+Title: titel
+}
+Array.push(eenkey)
+let keyJSON = JSON.stringify(Array)
+localStorage.setItem("key", keyJSON)

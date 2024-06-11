@@ -1,0 +1,33 @@
+#tafels{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+
+.card{
+    width: 300px;
+    border: solid 1px #432AA8;
+}
+
+.hoofd{
+    background-color: midnightblue;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.tabelkleuren{
+    background-color: dimgray;
+    margin: 0 5px 5px 0;
+    padding: 10px;
+    margin: 0;
+}
+
+.tabelkleuren:nth-child(2n){
+    background-color: white;
+}
+
+@media screen and (max-width: 786px){
+    #tafels{
+        grid-template-columns: repeat(2, auto);
+    }
+}
