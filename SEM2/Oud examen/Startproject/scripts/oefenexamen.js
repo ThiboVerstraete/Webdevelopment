@@ -4,22 +4,33 @@ let global = {
     Pogingen: 0
 }
 
-Array = []
+scoreArray = []
 
 const setup = () => {
     document.getElementById("nieuw").addEventListener("click", startSpel)
     document.getElementById("clear").addEventListener("click", clearHighscores)
+    let gokWoord = document.getElementById("gok").value
+    gokWoord.disabled = "disabled"
     bestaandeScores()
 }
 
 const bestaandeScores = () => {
     let storage = localStorage.getItem("key")
     let Sleutel = JSON.parse(storage)
-    if(Sleutel !== null && Array !== null){
+    if(Sleutel !== null && scoreArray !== null){
         for(let i = 0; i < Sleutel.length; i++){
             if(Sleutel[i] !== null){
-                Array.push(Sleutel[i])
-                maakBestaandeEntry(Sleutel[i].NAME, Sleutel[i].POGINGEN, Sleutel[i].DATUM)
+                scoreArray.push(Sleutel[i])
+            }
+        }
+    }
+
+    scoreArray.sort((a, b) => a.POGINGEN - b.POGINGEN)
+
+    if(Sleutel !== null && scoreArray !== null){
+        for(let i = 0; i < Sleutel.length; i++){
+            if(Sleutel[i] !== null){
+                maakBestaandeEntry(scoreArray[i].NAME, scoreArray[i].POGINGEN, scoreArray[i].DATUM)
             }
         }
     }
@@ -27,7 +38,11 @@ const bestaandeScores = () => {
 
 const startSpel = () => {
     console.log("ENTERING: startSpel")
+    global.Pogingen = 0
     global.Naam = window.prompt("Geef naam in:")
+
+    let gokWoord = document.getElementById("gok").value
+    gokWoord.disabled = ""
 
     document.getElementById("go").addEventListener("click", valideerWoord)
 
@@ -141,13 +156,21 @@ const maakNieuweEntry = (datum) =>{
         POGINGEN: global.Pogingen,
         DATUM: checkDatum()
     }
-    Array.push(eenkey)
-    let keyJSON = JSON.stringify(Array)
+    scoreArray.push(eenkey)
+    scoreArray.sort((a, b) => a.POGINGEN.localeCompare(b.POGINGEN))
+    let keyJSON = JSON.stringify(scoreArray)
     localStorage.setItem("key", keyJSON)
 
-    let score = document.createElement("p")
-    score.append("Naam: " + eenkey.NAME + ", pogingen: " + eenkey.POGINGEN + ", datum: " + eenkey.DATUM)
-    document.getElementById("highscores").append(score)
+    scorebord = document.getElementById("highscores")
+    if (scoreArray !== null){
+        var p_list = document.getElementsByTagName("p");
+        while (p_list.length > 2){
+            scorebord.removeChild(p_list[0])
+        }
+    }
+    for (let i = 0; i < scoreArray.length; i++) {
+        maakBestaandeEntry(scoreArray[i].NAME, scoreArray[i].POGINGEN, scoreArray[i].DATUM)
+    }
 }
 
 const maakBestaandeEntry = (naam, pogingen, datum) => {
@@ -159,11 +182,11 @@ const maakBestaandeEntry = (naam, pogingen, datum) => {
 const clearHighscores = () => {
     scorebord = document.getElementById("highscores")
     var p_list = document.getElementsByTagName("p");
-    while (p_list.length > 1){
+    while (p_list.length > 2){
         scorebord.removeChild(p_list[0])
     }
 
-    Array = []
+    scoreArray = []
     localStorage.clear()
 }
 

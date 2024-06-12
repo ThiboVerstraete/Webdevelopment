@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Formvalidatie</title>
+</head>
+<body>
+<form action="index.html" method="post">
+    <div class="line" id="voornaam">
+        <label for="txtVoornaam">Voornaam: </label>
+        <input type="text" id="txtVoornaam">
+        <span class="errorMessage" id="errVoornaam"></span>
+    </div>
+    <br>
+    <div class="line" id="familienaam">
+        <label for="txtFamilinaam">Familienaam: </label>
+        <input type="text" id="txtFamilinaam">
+        <span class="errorMessage" id="errFamilienaam"></span>
+    </div>
+    <br>
+    <div class="line" id="geboorte">
+        <label for="txtGeboorte">Geboortedatum: </label>
+        <input type="text" id="txtGeboorte" placeholder="jjjj-mm-dd">
+        <span class="errorMessage" id="errGeboorte"></span>
+    </div>
+    <br>
+    <div class="line" id="email">
+        <label for="txtEmail">Email: </label>
+        <input type="text" id="txtEmail">
+        <span class="errorMessage" id="errEmail"></span>
+    </div>
+    <br>
+    <div class="line" id="kinderen">
+        <label for="txtKinderen">Aantal kinderen: </label>
+        <input type="text" id="txtKinderen">
+        <span class="errorMessage" id="errKinderen"></span>
+    </div>
+    <br>
+    <input type="button" id="btnValideer" value="Valideer">
+</form>
+<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+</body>
+</html>

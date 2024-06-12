@@ -1,0 +1,60 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+h1{
+
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+p{
+    margin-top: 10px;
+}
+
+
+input{
+    width: 100%;
+    margin: 5px auto;
+    font-size: 20px;
+    padding: 9px 9px 9px 9px;
+    border-radius: 5px;
+}
+
+#txtZoek{
+    height: 50px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+#btnZoek{
+    height: 50px;
+    background-color: #1cbe17;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#btnZoek:active{
+    background-color: #128110;
+}
+
+.twitter{
+    background-color: #1da1f2;
+    color: #f5f8fa;
+}
+
+.google{
+    background-color: #34a853;
+    color: #f5f8fa;
+}
+
+.instagram{
+    background-color: #c32aa3;
+    color: #f5f8fa;
+}
+
+.youtube{
+    background-color: #ff0000;
+    color: #f5f8fa;
+}
+
+.
+

@@ -33,7 +33,7 @@ const achternaam = () => {
     let fn = document.getElementById("fn");
     let error = document.getElementById("errorachternaam")
 
-    if (fn === ""){
+    if (fn.value === ""){
         reportError(fn, error, "verplicht veld");
         return 1;
     } else if(fn.length > 50) {

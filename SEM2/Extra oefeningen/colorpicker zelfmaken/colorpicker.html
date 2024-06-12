@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/colorpicker.css">
+    <title>colorpicker</title>
+</head>
+<body>
+<div id="tabel">
+    <div id="kleurkiezer">
+        <div class="rijkleur">
+            <span><label for="sliderR">Red: </label>0<input type="range" id="sliderR" class="slider" min="0" max="255" value="128">255</span>
+        </div>
+        <div class="rijkleur">
+            <span><label for="sliderG">Green: </label>0<input type="range" id="sliderG" class="slider" min="0" max="255" value="128">255</span>
+        </div>
+        <div class="rijkleur">
+            <span><label for="sliderB">Blue: </label>0<input type="range" id="sliderB" class="slider" min="0" max="255" value="128">255</span>
+        </div>
+    </div>
+    <div id="mainblok" class="mainblok"></div>
+    <button id="opslaan">Save</button>
+</div>
+<div id="historiek"></div>
+
+<script src="scripts/colorpicker.js"></script>
+<footer>
+    <div class="return">
+        <a class="terug" href="../..">
+            <span>Return</span>
+        </a>
+    </div>
+</footer>
+</body>
+</html>
